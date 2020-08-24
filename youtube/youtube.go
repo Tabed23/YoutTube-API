@@ -69,6 +69,6 @@ func GetChannelDetail(channel_Id string) (Item, error) {
 		log.Fatal("Unmarshal Error ", err.Error())
 		return Item{}, err
 	}
-	return response.Items[0], nil
 
+	return response.Items[0], nil
 }

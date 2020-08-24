@@ -40,5 +40,5 @@ func getData() {
 		log.Fatalf("error %v", err)
 	}
 	prettyJSON, _ := json.MarshalIndent(item, "", "\t")
-	_ = ioutil.WriteFile("test.json", prettyJSON, 0644)
+	ioutil.WriteFile("test.json", prettyJSON, 0644)
 }
